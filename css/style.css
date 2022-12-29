@@ -1,7 +1,7 @@
 :root {
   --headers-color: #2e2f42;
   --text-color: #434455;
-  --primaty-bcg-color: #e5e5e5;
+  --primaty-bcg-color: #e5e5e5; 
   --hover-link-color: #4d5ae5;
 }
 /*the main color of headers #2E2F42 */
@@ -33,7 +33,7 @@ ul {
   padding: 0;
 }
 body {
-  background-color: var(--primaty-bcg-color);
+  background-color: #fff;
   color: var(--text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
@@ -186,6 +186,9 @@ img {
 }
 
 /*Features*/
+.feature{
+  background-color: var(--primaty-bcg-color);
+}
 .features {
   display: flex;
   gap: 24px;
@@ -234,6 +237,7 @@ img {
 
 /*What are we doing*/
 .company {
+  background-color: var(--primaty-bcg-color);
   padding-bottom: 120px;
 }
 .company-tittle {
@@ -323,6 +327,9 @@ img {
   border-radius: 50%;
   justify-content: center;
   fill: #f4f4fd;
+}
+.customers-section{
+  background-color: var(--primaty-bcg-color);
 }
 .customers-tittle {
   font-weight: 700;
@@ -418,14 +425,15 @@ img {
 .social-item:hover {
   background-color:#31d0aa;
 }
-.social-item:focus{
-  background-color: #31d0aa;
+.social-link:focus{
+  background-color: #31d0aa ;
 }
 
 /*PORTFOLIO*/
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
+  background-color: var(--primaty-bcg-color);
 }
 
 .buttons .link {
