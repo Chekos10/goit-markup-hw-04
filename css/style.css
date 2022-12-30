@@ -98,6 +98,7 @@ img {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .nav-page .item:not(:last-child) {
   margin-right: 40px;
@@ -151,6 +152,9 @@ img {
     ),
     url(../img/bcg-images/hero-bcg.jpg);
   background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  background-position: center;
 }
 .hero .tittle {
   color: #ffffff;
@@ -187,36 +191,11 @@ img {
 
 /*Features*/
 .feature {
-  background-color: var(--primaty-bcg-color);
+
 }
 .features {
   display: flex;
   gap: 24px;
-}
-.features .item::before {
-  display: block;
-  content: "";
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.icon-strategy::before {
-  background-image: url("../img/bcg-images/antenna\ 1.svg");
-  background-size: 59.72px;
-}
-.icon-punctuality::before {
-  background-image: url("../img/bcg-images/clock\ 1.svg");
-  background-size: 61.22px;
-}
-.icon-diligance::before {
-  background-image: url("../img/bcg-images/diagram\ 1.svg");
-  background-size: 64px;
-}
-.icon-technologies::before {
-  background-image: url("../img/bcg-images/astronaut\ 1.svg");
-  background-size: 64px;
 }
 .features .tittle {
   margin: 0;
@@ -234,10 +213,20 @@ img {
   padding: 0;
   margin: 0;
 }
-
+.icon{
+  display: flex;
+  width: 264px;
+  background-color:#F4F4FD;
+  border-radius: 4px;
+  justify-content: center;
+  align
+}
+.icon-feature{
+height: 112px;
+}
 /*What are we doing*/
 .company {
-  background-color: var(--primaty-bcg-color);
+
   padding-bottom: 120px;
 }
 .company-tittle {
@@ -328,8 +317,13 @@ img {
   justify-content: center;
   fill: #f4f4fd;
 }
+.soc-link:hover,
+.soc-link:focus{
+  background: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .customers-section {
-  background-color: var(--primaty-bcg-color);
+
 }
 .customers-tittle {
   font-weight: 700;
@@ -433,7 +427,6 @@ img {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
-  background-color: var(--primaty-bcg-color);
 }
 
 .buttons .link {
